@@ -66,8 +66,8 @@ class WelcomeViewController: UIViewController {
         
         progressBar.isHidden = false
         progressBar.progress = progress
-        loadProgressTimer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { [self] (timer) in
-            progress += 0.02
+        loadProgressTimer = Timer.scheduledTimer(withTimeInterval: 0.6, repeats: true, block: { [self] (timer) in
+            progress += 0.01
             self.progressBar.progress = progress
             
             if self.progressBar.progress == 1.0 {
